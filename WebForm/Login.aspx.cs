@@ -24,13 +24,25 @@ namespace WebForm
             }
             else
             {
+               // var email=0;
                 SqlConnection con = new SqlConnection("Data Source=SuyPC089;Initial Catalog=TestDB;Persist Security Info=True;User ID=sa;Password=Suyati123");
                 Int32 verify;
                 string query1 = "Select count(*) from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
                 SqlCommand cmd1 = new SqlCommand(query1, con);
+                string query2 = "Select * from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
+                SqlCommand cmd2 = new SqlCommand(query2, con);
                 con.Open();
-                Session["Username"] = TextBox1.Text;
+                SqlDataReader rd = cmd2.ExecuteReader();
+                while(rd.Read())
+                {
+                    var email = rd["Email"];
+                    Session["Username"] = TextBox1.Text;
+                    Session["Email"] = email;
+                }
+                rd.Close();
+                
                 verify = Convert.ToInt32(cmd1.ExecuteScalar());
+               
                 con.Close();
                 if (verify > 0)
                 {

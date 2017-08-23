@@ -131,6 +131,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Webforms\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Authentification.aspx" />
@@ -146,7 +147,7 @@
     <Content Include="scripts\jquery.validate.min.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="SendMail.aspx" />
+    <Content Include="Webforms\SendMail.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -182,11 +183,11 @@
     <Compile Include="Register\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SendMail.aspx.cs">
+    <Compile Include="Webforms\SendMail.aspx.cs">
       <DependentUpon>SendMail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SendMail.aspx.designer.cs">
+    <Compile Include="Webforms\SendMail.aspx.designer.cs">
       <DependentUpon>SendMail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">

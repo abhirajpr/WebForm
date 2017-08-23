@@ -37,7 +37,7 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TestDBConnectionString %>" SelectCommand="SELECT * FROM [UserDb]"></asp:SqlDataSource>
         <br />
-        <asp:Button ID="Button1" runat="server" Height="28px" PostBackUrl="~/SendMail.aspx" Text="Send Mail" />
+        <asp:Button ID="Button1" runat="server" Height="28px" PostBackUrl="~/Webforms/SendMail.aspx" Text="Send Mail" />
 &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register/Register.aspx">Register</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;

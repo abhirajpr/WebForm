@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 36%;
+            width: 33%;
             height: 153px;
             margin-top: 0px;
         }
@@ -55,7 +55,7 @@
                     <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                 </td>
                 <td colspan="2">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~Register/Register.aspx">Register</asp:HyperLink>
                 </td>
                 <td class="auto-style6">&nbsp;</td>
             </tr>

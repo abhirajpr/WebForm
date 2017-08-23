@@ -12,6 +12,10 @@
     
         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Welcome"></asp:Label>
     
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server"></asp:Label>
+    
     </div>
     </form>
 </body>

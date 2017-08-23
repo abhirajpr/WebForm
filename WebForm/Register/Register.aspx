@@ -7,7 +7,7 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 51%;
+            width: 43%;
             height: 233px;
         }
         .auto-style4 {
@@ -18,6 +18,9 @@
         }
         .auto-style6 {
             width: 130px;
+        }
+        .auto-style7 {
+            width: 268435376px;
         }
         </style>
     
@@ -75,9 +78,10 @@
                     <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
                 </td>
                 <td colspan="2" class="auto-style5">
+                    &nbsp;&nbsp;
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
                 </td>
-                <td>
+                <td class="auto-style7">
                     &nbsp;</td>
             </tr>
         </table>
@@ -88,7 +92,7 @@
     
     </div>
     </form>
-     <script src="scripts/jquery.validate.unobtrusive.js"></script>
-    <script src="scripts/jquery.validate.min.js"></script>
+     <script src="../scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="../scripts/jquery.validate.min.js"></script>
 </body>
 </html>

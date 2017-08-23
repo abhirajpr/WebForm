@@ -19,7 +19,8 @@ namespace WebForm
         {
             if (TextBox1.Text == "admin" & TextBox2.Text == "admin")
             {
-                Response.Redirect("Database.aspx");
+                Server.Transfer("Database.aspx");
+                //Response.Redirect("Database.aspx");
             }
             else
             {
@@ -28,11 +29,12 @@ namespace WebForm
                 string query1 = "Select count(*) from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
                 SqlCommand cmd1 = new SqlCommand(query1, con);
                 con.Open();
+                Session["Username"] = TextBox1.Text;
                 verify = Convert.ToInt32(cmd1.ExecuteScalar());
                 con.Close();
                 if (verify > 0)
                 {
-                    Response.Redirect("Welcome.aspx");
+                    Server.Transfer("Welcome.aspx");
                 }
                 else
                 {

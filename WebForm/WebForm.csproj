@@ -107,6 +107,7 @@
     </Content>
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="Webforms\Index.aspx" />
     <Content Include="Welcome.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -134,8 +135,8 @@
     <Content Include="Webforms\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Authentification.aspx" />
-    <Content Include="book.xml" />
+    <Content Include="Webforms\Authentification.aspx" />
+    <Content Include="Webforms\book.xml" />
     <Content Include="Global.asax" />
     <Content Include="Register\Register.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
@@ -151,11 +152,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Authentification.aspx.cs">
+    <Compile Include="Webforms\Authentification.aspx.cs">
       <DependentUpon>Authentification.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Authentification.aspx.designer.cs">
+    <Compile Include="Webforms\Authentification.aspx.designer.cs">
       <DependentUpon>Authentification.aspx</DependentUpon>
     </Compile>
     <Compile Include="Database.aspx.cs">
@@ -182,6 +183,13 @@
     </Compile>
     <Compile Include="Register\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\SendMail.aspx.cs">
       <DependentUpon>SendMail.aspx</DependentUpon>

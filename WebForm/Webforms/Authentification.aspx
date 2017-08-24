@@ -27,6 +27,10 @@
         </asp:GridView>
     
     </div>
+        <br />
+        <br />
+        <br />
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Height="21px" PostBackUrl="~/Webforms/Index.aspx" Text="Home" Width="104px" />
     </form>
 </body>
 </html>

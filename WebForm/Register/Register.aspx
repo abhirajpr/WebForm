@@ -14,13 +14,10 @@
             width: 132px;
         }
         .auto-style5 {
-            width: 42px;
+            width: 80px;
         }
         .auto-style6 {
             width: 130px;
-        }
-        .auto-style7 {
-            width: 268435376px;
         }
         </style>
     
@@ -76,12 +73,12 @@
             <tr>
                 <td class="auto-style6">
                     <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
                 <td colspan="2" class="auto-style5">
-                    &nbsp;&nbsp;
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
                 </td>
-                <td class="auto-style7">
+                <td>
                     &nbsp;</td>
             </tr>
         </table>
@@ -90,7 +87,11 @@
         <br />
         <asp:Label ID="Label7" runat="server" ForeColor="Red"></asp:Label>
     
+        <br />
+        <br />
+    
     </div>
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Height="21px" PostBackUrl="~/Webforms/Index.aspx" Text="Home" Width="104px" />
     </form>
      <script src="../scripts/jquery.validate.unobtrusive.js"></script>
     <script src="../scripts/jquery.validate.min.js"></script>

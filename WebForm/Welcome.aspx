@@ -22,6 +22,7 @@
         <table class="auto-style1">
             <tr>
                 <td>Username</td>
+                <td>:</td>
                 <td>
         <asp:Label ID="Label2" runat="server"></asp:Label>
     
@@ -29,6 +30,7 @@
             </tr>
             <tr>
                 <td>Email</td>
+                <td>:</td>
                 <td>
                     <asp:Label ID="Label3" runat="server"></asp:Label>
                 </td>
@@ -38,6 +40,7 @@
         <br />
     
     </div>
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Height="21px" PostBackUrl="~/Webforms/Index.aspx" Text="Home" Width="104px" />
     </form>
 </body>
 </html>

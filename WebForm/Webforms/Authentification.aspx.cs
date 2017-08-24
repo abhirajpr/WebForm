@@ -21,7 +21,7 @@ namespace WebForm
         protected void Button1_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
-            ds.ReadXml(Server.MapPath("book.xml"));
+            ds.ReadXml(Server.MapPath("~/Webforms/book.xml"));
             GridView1.DataSource = ds;
             GridView1.DataBind();
         }

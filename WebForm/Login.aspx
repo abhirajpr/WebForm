@@ -20,7 +20,20 @@
         .auto-style8 {
             height: 45px;
         }
+        .auto-style9 {
+            text-shadow: 0 1px 0 #fff;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+            color: #333;
+            border-color: #ccc;
+            background-color: #fff;
+            background-image: url('linear-gradient(to%20bottom,#fff 0,#e0e0e0 100%)');
+            background-repeat: repeat-x;
+        }
     </style>
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -63,7 +76,11 @@
     
         <asp:Label ID="Label4" runat="server"></asp:Label>
     
+        <br />
+        <br />
+    
     </div>
+        <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Height="21px" PostBackUrl="~/Webforms/Index.aspx" Text="Home" Width="104px" />
     </form>
 </body>
 </html>

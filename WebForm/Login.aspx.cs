@@ -16,45 +16,45 @@ namespace WebForm
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            if (TextBox1.Text == "admin" & TextBox2.Text == "admin")
-            {
-                Server.Transfer("Database.aspx");
-                //Response.Redirect("Database.aspx");
-            }
-            else
-            {
-                SqlConnection con = new SqlConnection("Data Source=SuyPC089;Initial Catalog=TestDB;Persist Security Info=True;User ID=sa;Password=Suyati123");
-                Int32 verify;
-                string query1 = "Select count(*) from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
-                SqlCommand cmd1 = new SqlCommand(query1, con);
-                string query2 = "Select * from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
-                SqlCommand cmd2 = new SqlCommand(query2, con);
-                con.Open();
-                SqlDataReader rd = cmd2.ExecuteReader();
-                while(rd.Read())
-                {
-                    var email = rd["Email"];
-                    Session["Username"] = TextBox1.Text;
-                    Session["Email"] = email;
-                }
-                rd.Close();
-                verify = Convert.ToInt32(cmd1.ExecuteScalar());
-                con.Close();
-                if (verify > 0)
-                {
-                    Server.Transfer("Welcome.aspx");
-                }
-                else
-                {
-                    Response.Write("<script>alert('Invalid Username and Password')</script>");
-                    //Label4.Text = "Invalid Username and Password";
-                }
-            }
-        }
+        //protected void Button1_Click(object sender, EventArgs e)
+        //{
+        //    if (TextBox1.Text == "admin" & TextBox2.Text == "admin")
+        //    {
+        //        Server.Transfer("Database.aspx");
+        //        //Response.Redirect("Database.aspx");
+        //    }
+        //    else
+        //    {
+        //        SqlConnection con = new SqlConnection("Data Source=SuyPC089;Initial Catalog=TestDB;Persist Security Info=True;User ID=sa;Password=Suyati123");
+        //        Int32 verify;
+        //        string query1 = "Select count(*) from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
+        //        SqlCommand cmd1 = new SqlCommand(query1, con);
+        //        string query2 = "Select * from UserDb where Username='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "' ";
+        //        SqlCommand cmd2 = new SqlCommand(query2, con);
+        //        con.Open();
+        //        SqlDataReader rd = cmd2.ExecuteReader();
+        //        while(rd.Read())
+        //        {
+        //            var email = rd["Email"];
+        //            Session["Username"] = TextBox1.Text;
+        //            Session["Email"] = email;
+        //        }
+        //        rd.Close();
+        //        verify = Convert.ToInt32(cmd1.ExecuteScalar());
+        //        con.Close();
+        //        if (verify > 0)
+        //        {
+        //            Server.Transfer("Welcome.aspx");
+        //        }
+        //        else
+        //        {
+        //            Response.Write("<script>alert('Invalid Username and Password')</script>");
+        //            //Label4.Text = "Invalid Username and Password";
+        //        }
+        //    }
+        //}
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             int attempts;
             if (TextBox1.Text == "admin" & TextBox2.Text == "admin")
@@ -101,7 +101,8 @@ namespace WebForm
                         }
                         else
                         {
-                            Label4.Text = "Your acoount is locked";
+                            Label5.Text = "Your acount is locked";
+                            Label4.Text = "";
                         }
                     }
                     else
@@ -120,11 +121,13 @@ namespace WebForm
                         attempts = (int)cmd3.Parameters["@LoginAttempts"].Value;
                         if (attempts==0)
                         {
-                            Label4.Text = "Your acoount is locked";
+                            Label5.Text = "Your acount is locked!!!";
+                            Label4.Text = "";
                         }
                         else
                         {
                             Label4.Text = "Only " + attempts + " Chance Left";
+                            Label5.Text = "";
                         }
 
                     }

@@ -66,7 +66,7 @@
             <tr>
                 <td class="auto-style4">
                     <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Login1" />
+                    <%--<asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Login1" />--%>
                 </td>
                 <td colspan="2">
                     <asp:HyperLink ID="HyperLink1" runat="server" EnableTheming="True" NavigateUrl="~/Register/Register.aspx">Register</asp:HyperLink>
@@ -75,7 +75,10 @@
             </tr>
         </table>
     
-        <asp:Label ID="Label4" runat="server"></asp:Label>
+        <asp:Label ID="Label4" runat="server" ForeColor="Green"></asp:Label>
+    
+        <br />
+        <asp:Label ID="Label5" runat="server" ForeColor="Red"></asp:Label>
     
         <br />
         <br />

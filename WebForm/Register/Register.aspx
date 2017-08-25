@@ -89,9 +89,9 @@
     
         <br />
         <br />
-    
+    <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Height="21px" PostBackUrl="~/Webforms/Index.aspx" Text="Home" Width="104px" />
     </div>
-        <asp:Button ID="Button2" runat="server" CssClass="auto-style9" Height="21px" PostBackUrl="~/Webforms/Index.aspx" Text="Home" Width="104px" />
+        
     </form>
      <script src="../scripts/jquery.validate.unobtrusive.js"></script>
     <script src="../scripts/jquery.validate.min.js"></script>

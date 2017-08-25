@@ -66,6 +66,7 @@
             <tr>
                 <td class="auto-style4">
                     <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Login1" />
                 </td>
                 <td colspan="2">
                     <asp:HyperLink ID="HyperLink1" runat="server" EnableTheming="True" NavigateUrl="~/Register/Register.aspx">Register</asp:HyperLink>

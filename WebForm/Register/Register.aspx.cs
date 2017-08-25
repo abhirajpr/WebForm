@@ -25,7 +25,7 @@ namespace WebForm
             Int32 verify = Convert.ToInt32(cmd1.ExecuteScalar());
             if (verify == 0)
             {
-                
+
                 SqlCommand cmd = new SqlCommand("insert into UserDb(Username,Email,Password) values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "')", con);
                 cmd.CommandType = CommandType.Text;
                 Label6.Text = "User Registerd";
@@ -37,9 +37,15 @@ namespace WebForm
                 Label7.Text = "User Already Exist";
                 Label6.Text = "";
             }
-           
+
             con.Close();
-            
+
         }
+
+        //protected void Button2_Click(object sender, EventArgs e)
+        //{
+        //    Server.Transfer("~/ Webforms / Index.aspx");
+        //}
+
     }
 }

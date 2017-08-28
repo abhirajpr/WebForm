@@ -55,3 +55,17 @@ SELECT TOP 1000 [ID]
   update [dbo].[UserDb] set Try=5
   update [dbo].[UserDb] set isLocked=0
    update [dbo].[UserDb] set Date=NULL
+   
+   
+   
+   
+   -------------------------------------------------------------------
+   create procedure resetlogin
+as
+begin
+	update [dbo].[UserDb] set Try=5
+	update [dbo].[UserDb] set isLocked=0
+	update [dbo].[UserDb] set Date=NULL
+end
+
+exec resetlogin

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -65,6 +66,16 @@ namespace WebForm
             {
                 Server.Transfer("Database.aspx");
             }
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd3 = new SqlCommand("resetlogin", con);
+            cmd3.CommandType = CommandType.StoredProcedure;
+            cmd3.ExecuteNonQuery();
+            con.Close();
+            Response.Redirect("~/Database.aspx");
         }
     }
 }

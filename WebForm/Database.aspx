@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,6 +38,9 @@
             <SortedDescendingHeaderStyle BackColor="#383838" />
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TestDBConnectionString %>" SelectCommand="SELECT * FROM [UserDb]"></asp:SqlDataSource>
+        <br />
+        <asp:Button ID="Button3" runat="server"  OnClick="Button3_Click" Text="Reset Database" Width="224px" CssClass="btn-success active" />
+        <br />
         <br />
         <asp:Button ID="Button1" runat="server" Height="28px" PostBackUrl="~/Webforms/SendMail.aspx" Text="Send Mail" />
 &nbsp;&nbsp;&nbsp;

@@ -107,6 +107,7 @@
     </Content>
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="Webforms\ChangePassword.aspx" />
     <Content Include="Webforms\Index.aspx" />
     <Content Include="Welcome.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -183,6 +184,13 @@
     </Compile>
     <Compile Include="Register\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

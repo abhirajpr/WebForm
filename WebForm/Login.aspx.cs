@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -61,6 +62,8 @@ namespace WebForm
             {
                 Server.Transfer("Database.aspx");
                 //Response.Redirect("Database.aspx");
+                //FormsAuthentication.RedirectFromLoginPage(TextBox1.Text, true);
+
             }
             else
             {
@@ -94,10 +97,16 @@ namespace WebForm
                                 var email = rd["Email"];
                                 Session["Username"] = TextBox1.Text;
                                 Session["Email"] = email;
+
                             }
                             rd.Close();
 
-                            Server.Transfer("Welcome.aspx");
+                            //Server.Transfer("Welcome.aspx");
+                            FormsAuthentication.RedirectFromLoginPage(TextBox1.Text,true);
+                            
+                                
+                            
+
                         }
                         else
                         {

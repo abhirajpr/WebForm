@@ -36,6 +36,7 @@
                 </td>
             </tr>
         </table>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Webforms/ChangePassword.aspx">Change Password</asp:HyperLink>
         <br />
         <br />
     

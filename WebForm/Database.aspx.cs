@@ -34,7 +34,7 @@ namespace WebForm
             }
             finally
             {
-                Response.Redirect("Database.aspx");
+               Server.Transfer("Database.aspx");
             }
 
         }
@@ -63,7 +63,7 @@ namespace WebForm
             }
             finally
             {
-                Response.Redirect("Database.aspx");
+                Server.Transfer("Database.aspx");
             }
         }
     }

@@ -39,7 +39,7 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TestDBConnectionString %>" SelectCommand="SELECT * FROM [UserDb]"></asp:SqlDataSource>
         <br />
-        <asp:Button ID="Button3" runat="server"  OnClick="Button3_Click" Text="Reset Database" Width="224px" CssClass="btn-success active" />
+        <asp:Button ID="Button3" runat="server"  OnClick="Button3_Click" Text="Reset Database" Width="494px" CssClass="btn-success active" />
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Height="28px" PostBackUrl="~/Webforms/SendMail.aspx" Text="Send Mail" />

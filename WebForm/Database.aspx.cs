@@ -51,10 +51,10 @@ namespace WebForm
             {
                 string UserID = GridView1.DataKeys[e.RowIndex].Values["ID"].ToString();
                 string name = e.NewValues[0].ToString();
-                string password = e.NewValues[1].ToString();
-                string email = e.NewValues[2].ToString();
+                string password = e.NewValues[2].ToString();
+                string email = e.NewValues[1].ToString();
                 con.Open();
-                string sql = "update UserDb set Username='" + name + "', Password = '" + password + "', Email = '" + email + "' where ID='" + UserID + "'";
+                string sql = "update UserDb set Username='" + name + "', Email = '" + email + "', Password = '" + password + "' where ID='" + UserID + "'";
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.ExecuteNonQuery();
                 con.Close();

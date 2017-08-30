@@ -24,9 +24,7 @@
     
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td colspan="3" style="font-size: 30px; font-weight: bolder">Reset Password</td>
             </tr>
             <tr>
                 <td class="auto-style2">Username</td>

@@ -105,10 +105,14 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ReusableViews\CalenderUserControl.ascx" />
+    <Content Include="Sample\CalenderControl.aspx" />
+    <Content Include="Sample\Images\calendar.png" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="Webforms\ChangePassword.aspx" />
     <Content Include="Webforms\Index.aspx" />
+    <Content Include="Sample\TestCalenderUC.aspx" />
     <Content Include="Welcome.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -120,6 +124,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\web.pubxml" />
     <Content Include="Register\Web.config" />
+    <Content Include="Sample\Web.config" />
     <None Include="scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="scripts\jquery-3.1.1.js" />
     <Content Include="scripts\jquery-3.1.1.min.js" />
@@ -153,6 +158,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReusableViews\CalenderUserControl.ascx.cs">
+      <DependentUpon>CalenderUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReusableViews\CalenderUserControl.ascx.designer.cs">
+      <DependentUpon>CalenderUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\CalenderControl.aspx.cs">
+      <DependentUpon>CalenderControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\CalenderControl.aspx.designer.cs">
+      <DependentUpon>CalenderControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webforms\Authentification.aspx.cs">
       <DependentUpon>Authentification.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -205,6 +224,13 @@
     </Compile>
     <Compile Include="Webforms\SendMail.aspx.designer.cs">
       <DependentUpon>SendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\TestCalenderUC.aspx.cs">
+      <DependentUpon>TestCalenderUC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\TestCalenderUC.aspx.designer.cs">
+      <DependentUpon>TestCalenderUC.aspx</DependentUpon>
     </Compile>
     <Compile Include="Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>

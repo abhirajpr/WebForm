@@ -111,8 +111,10 @@
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="Webforms\ChangePassword.aspx" />
+    <Content Include="Webforms\ChangePassword1.aspx" />
     <Content Include="Webforms\Index.aspx" />
     <Content Include="Sample\TestCalenderUC.aspx" />
+    <Content Include="Webforms\ResetPassword.aspx" />
     <Content Include="Welcome.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -211,12 +213,26 @@
     <Compile Include="Webforms\ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webforms\ChangePassword1.aspx.cs">
+      <DependentUpon>ChangePassword1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\ChangePassword1.aspx.designer.cs">
+      <DependentUpon>ChangePassword1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webforms\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Webforms\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\SendMail.aspx.cs">
       <DependentUpon>SendMail.aspx</DependentUpon>

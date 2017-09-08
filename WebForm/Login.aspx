@@ -7,8 +7,8 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 33%;
-            height: 153px;
+            width: 35%;
+            height: 163px;
             margin-top: 0px;
         }
         .auto-style4 {
@@ -70,6 +70,9 @@
                 </td>
                 <td colspan="2">
                     <asp:HyperLink ID="HyperLink1" runat="server" EnableTheming="True" NavigateUrl="~/Register/Register.aspx">Register</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Webforms/ResetPassword.aspx">Reset Password</asp:HyperLink>
                 </td>
                 <td class="auto-style6">&nbsp;</td>
             </tr>

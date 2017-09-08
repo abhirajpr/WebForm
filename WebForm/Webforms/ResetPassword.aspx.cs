@@ -60,10 +60,9 @@ namespace WebForm.Webforms
             sbEmailBody.Append("Dear " + UserName + ",<br/><br/>");
             sbEmailBody.Append("Please click on the following link to reset your password");
             sbEmailBody.Append("<br/>");
-            sbEmailBody.Append("http://http://localhost:54710/Webforms/ChangePassword1.aspx?uid=" + UniqueId);
+            sbEmailBody.Append("http://localhost:54710/Webforms/ChangePassword1.aspx?uid=" + UniqueId);
             sbEmailBody.Append("<br/><br/>");
             sbEmailBody.Append("<b>Pragim Technologies</b>");
-
             mailMessage.IsBodyHtml = true;
 
             mailMessage.Body = sbEmailBody.ToString();

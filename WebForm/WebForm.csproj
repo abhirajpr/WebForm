@@ -105,9 +105,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ReusableViews\CachingUserControl.ascx" />
     <Content Include="ReusableViews\CalenderUserControl.ascx" />
+    <Content Include="Sample\CachingDemo.aspx" />
     <Content Include="Sample\CalenderControl.aspx" />
     <Content Include="Sample\Images\calendar.png" />
+    <Content Include="Sample\TestCacheUC.aspx" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="Webforms\ChangePassword.aspx" />
@@ -160,6 +163,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReusableViews\CachingUserControl.ascx.cs">
+      <DependentUpon>CachingUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReusableViews\CachingUserControl.ascx.designer.cs">
+      <DependentUpon>CachingUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="ReusableViews\CalenderUserControl.ascx.cs">
       <DependentUpon>CalenderUserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,12 +177,26 @@
     <Compile Include="ReusableViews\CalenderUserControl.ascx.designer.cs">
       <DependentUpon>CalenderUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Sample\CachingDemo.aspx.cs">
+      <DependentUpon>CachingDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\CachingDemo.aspx.designer.cs">
+      <DependentUpon>CachingDemo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sample\CalenderControl.aspx.cs">
       <DependentUpon>CalenderControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Sample\CalenderControl.aspx.designer.cs">
       <DependentUpon>CalenderControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\TestCacheUC.aspx.cs">
+      <DependentUpon>TestCacheUC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample\TestCacheUC.aspx.designer.cs">
+      <DependentUpon>TestCacheUC.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\Authentification.aspx.cs">
       <DependentUpon>Authentification.aspx</DependentUpon>

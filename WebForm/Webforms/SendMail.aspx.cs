@@ -19,7 +19,7 @@ namespace WebForm
             MailMessage mail = new MailMessage();
             mail.To.Add(TextBox1.Text);
             mail.From = new MailAddress("abhiraj.mec@gmail.com");
-                                                                                                        string pass = "lija1970";
+                                                                                                        string pass = "*******";
             mail.Subject = TextBox2.Text;
             string Body = TextBox3.Text;
             mail.Body = Body;

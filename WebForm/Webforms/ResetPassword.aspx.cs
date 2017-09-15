@@ -67,7 +67,7 @@ namespace WebForm.Webforms
 
             mailMessage.Body = sbEmailBody.ToString();
             mailMessage.Subject = "Reset Your Password";
-            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);                                              string pass = "lija1970";
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);                                              string pass = "*****";
 
             smtpClient.Credentials = new System.Net.NetworkCredential()
             {
